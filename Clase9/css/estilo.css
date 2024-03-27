@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Google fonts: .open-sans<tuClase> */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header, footer {
+    background-color: coral; /* fondo */
+    color: whitesmoke; /* fuente o tipografía */
+    height: auto;
+    text-align: center;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+}

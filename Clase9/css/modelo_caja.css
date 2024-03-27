@@ -1,0 +1,45 @@
+/* Porque usamos border-box */
+/* 
+section {
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+}  */
+/* Sin border-box */
+/* tamaño del ancho = 50 + 10 + 10  // contenido = 50 */
+/* Con border-box */
+/* tamaño del ancho = 50 // contenido = 50 - 10 - 10 */
+
+
+body {
+    background-color: rgb(193, 193, 193); /* 0 - 255 */
+    /*                     rojo, verde, azul*/
+}
+
+header, main {
+    border: 2px solid black;
+    /* medidas relativas */
+    padding: 1%;
+    margin: 1%;
+    
+    /* medidas absolutas  - no es adaptable */
+    
+    /* padding: 40px; 
+    margin: 40px;   */
+   
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+
+section {
+    background-color: greenyellow;
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.max-50porc {
+    max-width: 50%;
+    max-height: 50%;
+}

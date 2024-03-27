@@ -1,0 +1,79 @@
+article {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.fa-brands {
+    margin: 1%;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 20;
+}
+
+img {
+    width: 15%;
+}
+
+.enLinea {
+    display: flex;
+}
+
+/* Posición */ 
+article {
+    width: 50%;
+}
+
+section {
+    display: flex;
+}
+
+/* puntos de corte */ 
+@media only screen and (max-width: 600px) {
+    main {
+        background-color: beige;
+    }
+    
+    section {
+        display: block;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+
+    body {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        background-color: lightskyblue;
+    }
+
+    article {
+        width: 50%;
+    }
+    
+    section {
+        display: flex;
+    }
+
+    img {
+        display: none;
+    }
+
+    body {
+        font-size: medium;
+    }
+}
+
+/* Tarea: armar punto de corte para escritorio */ 
