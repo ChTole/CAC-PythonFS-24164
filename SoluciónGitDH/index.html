@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>CAC PS - Repositorio de prueba</title>
+</head>
+<body>
+    <a name="nodos"></a>
+    <header class="cabecera">
+        <h1>Git - Solución para el desacople de HEAD</h1>
+    </header>
+    <main>
+        <section class="inicio fijo">
+            <nav>
+                <h4>Contenidos</h4>
+                <ul>
+                    <li><a href="#nodos">Recorriendo el repositorio</a></li>
+                    <li><a href="#desacople">Desacople del <i>HEAD</i></a></li>
+                    <li><a href="#solucion">Solución al desacople</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="articulos inicio">
+            <article>
+                <h2>Recorriendo los nodos o <i>«commits»</i> generados</h2>
+                <p>Cuando trabajamos con el control de versiones, las mismas se generan a través de <i>git commit</i>.</p>
+                <p>A su vez las versiones se conectan a través de una <i>«rama»</i> (o branch), una suerte de <i>línea del tiempo</i>.</p>
+                <p>Aclaración: de acuerdo a lo visto en clase siempre trabajamos sobre la misma rama, llamada <i>master</i> (o main en algunos casos).</p>
+                <div class="centrado">
+                    <img src="./img/git1.jpg" alt="Imagen 1: Compromisos o commits registrados en el repositorio local.">
+                </div>
+                <p>Si utilizamos la instrucción <i>git checkout «número del commit»</i> nos podemos mover a una versión anterior del repositorio.</p>
+                <div class="centrado">
+                    <img src="./img/git2.jpg" alt="Imagen 2: Cambio a un commit anterior.">
+                </div>
+                <a name="desacople"></a>
+            </article>
+            <article>
+                <h2>¿Qué ocurre con el siguiente mensaje?</h2>
+                <div class="centrado">
+                    <img src="./img/git3.jpg" alt="Imagen 3: Mensaje de HEAD(cabeza) desacoplada.">
+                </div>
+                <p>Lo que indica el mensaje es que el <i>HEAD</i> (el apuntador del repositorio) se encuentra sobre el <i>commit</i> solicitado pero <strong>no sobre la rama.</strong></p>
+                <p>Lo anterior queda evidenciado en la siguiente imagen, donde ya no vemos <i>(HEAD -> master)</i> sino <i>(HEAD, master)</i></p>
+                <div class="centrado">
+                    <img src="./img/git4.jpg" alt="Imagen 4: Listado abreviado de commits con HEAD desacoplado.">
+                </div>
+            </article>
+            <article>
+                <h2><a name="solucion">¿Cómo se puede solucionar el desacople del <i>HEAD</i>?</a></h2>
+                <p>Un solución inmediata sería indicarle adicionalmente qué no sólo apunte al commit, sino también a la rama:</p>
+                <div class="centrado">
+                    <img src="./img/git5.jpg" alt="Imagen 5: Solución rápida al desacople del HEAD.">
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
