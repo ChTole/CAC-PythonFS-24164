@@ -1,0 +1,25 @@
+/* Escalado de imágenes */
+
+picture {
+    display: flex;
+    padding: 2%;
+}
+
+img {
+    width: 15%;
+    height: auto;
+}
+
+.imgArticulo {
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+/* GRID */
+/* Dispongo los elementos en 2 dimensiones */
+
+section {
+    display: grid;
+    grid-template-columns: 40% 40%; /* 2 columnas del mismo tamaño*/
+    justify-content: space-around;
+}

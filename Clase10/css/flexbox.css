@@ -1,0 +1,30 @@
+/* Escalado de imágenes */
+
+picture {
+    display: flex;
+    padding: 2%;
+}
+
+img {
+    width: 15%;
+    height: auto;
+}
+
+.imgArticulo {
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+/* FLEXBOX */
+/* Siempre trabaja en una dimensión */
+
+section {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+article {
+    width: 35%;
+}
