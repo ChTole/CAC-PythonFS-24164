@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Clase 19 - JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript - Validación de formulario</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Validación de formulario</h2>
+            <p>Manejo respuesta recibida en el formulario.</p>
+            <form id="formNombreEdad">
+                <div>
+                    <label for="nombre">Ingrese nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="edad">Ingrese edad:</label>
+                    <input type="text" name="edad" id="edad">
+                </div>
+                <p id="rtaForm"></p>
+                <input type="submit" value="Validar">
+            </form>
+        </section>
+        <section>
+            <h2>Datos externos (locales)</h2>
+            <ul id="lenguajes"></ul>
+        </section>
+    </main>
+    <script src="./js/validar-form.js"></script>
+    <script src="./js/cargarDatos.js"></script>
+</body>
+</html>
