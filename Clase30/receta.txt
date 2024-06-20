@@ -1,0 +1,9 @@
+Receta Flask
+
+1- Crear proyecto Flask en PAW
+2- Clonar repo
+3 Migrar BBDD
+4 cambiar config BBDD.
+5 ejecutar backup BBDD
+6 Cambiar config wsgi.py y Web config
+7 Recargar y listo!
