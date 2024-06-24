@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block modelos %}
+<ul>
+    {% for n in niveles %}
+        <li>{{ n.nivel.upper() }}</li>
+        <button>Modificar</button>
+        <button>Eliminar</button>
+    {% endfor %}
+</ul>
+{% endblock modelos %}
